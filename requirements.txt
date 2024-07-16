@@ -1,0 +1,5 @@
+numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp310-cp310-linux_x86_64.whl#sha256=d8cd837ed43e87f77e6efaa08e8de927ca030a1c9c5d04624432d6fb9a74a5ee
+pandas==2.2.2
+plotly==5.22.0
+scipy==1.14.0
+matplotlib
