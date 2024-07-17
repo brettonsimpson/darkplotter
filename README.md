@@ -16,13 +16,34 @@ If you use this code in your research work, please refer to the package by its n
 
 This repository requires Python 3.10 or high, and a list of packages downloaded automatically ([numpy](https://github.com/numpy/numpy), [scipy](https://scipy.org/), etc.). In addition, it is required to install all the dependencies related to [plotly](https://plotly.com/python/).
 
------------------------------------------------------------------------------------------------------------------
+# Installing **Package_Name**
 
-*Rough Draft*
+You can install **Package_Name** on Windows, MacOs and Linux distributions. In both cases, we assume that you have already installed the dependencies and the appropriate Python version. Now, there are two options to install **ClassiPyGRB**:
 
-Allows the user to interact with a visualization of the orbital radius as a function of radius for the Milky Way galaxy.
-- Triaxial NFW Potential
-- Plummer Potential
-- Exponential Potential
+## GitHub
 
-Each potential has parameters the user can adjust to compare their simulated velocity profile with the observed velocity profile.
+You can install the latest sources from **ClassiPyGRB** by cloning the repository directly from GitHub:
+```
+$ git clone https://github.com/brettonsimpson/group-13
+$ cd package_name
+$ pip install .
+```
+Or, instead, use `pip` with the path to the repository:
+```
+$ pip install package_name@git+https://github.com/brettonsimpson/group-13
+```
+
+## PyPI
+A stable compiled version of **ClassiPyGRB** is available on [PyPI](https://pypi.org/). You can install it by running:
+```
+$ pip install package_name
+```
+
+## Testing
+
+If you have installed the development version of **Package_Name** or cloned the complete source code (e.g., from the GitHub repository), you can run the tests by executing the following commands:
+
+```
+$ cd package_name
+$ python -m unittest -v
+```
