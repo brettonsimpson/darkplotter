@@ -1,0 +1,52 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - Keneth_updates  # Here we need to change the name of the branches to be tested (ideally main)
+    paths:  # Here we mention the paths where run test automatically if any change is commited
+      - src/**
+      - .github/workflows/tests.yml
+      - pyproject.toml
+  pull_request:  # Here we design that tests will be executed automatically when pull_request on main branch within the paths requested
+    branches:
+      - main
+    paths:
+      - src/**  # Re-run test when change into main code are done
+      - .github/workflows/tests.yml  # Re-run tests when the YAML file to execute automatic tests is updated
+
+jobs:   # This section defines the jobs executed to test our package
+  test:
+    runs-on: ubuntu-latest  # Run tests on latest version of Ubuntu
+
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]  # Python versions to test
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install System Dependencies   # Every system dependencies required to install our package (i.e., using moviepy requires Pillow), if there aren´t any, dele this subsection
+        run: |  # Install Tkinter and Pillow dependencies for ClassiPyGRB
+          sudo apt-get update
+          sudo apt-get install -y python3-tk
+          sudo apt-get install -y python3-pil python3-pil.imagetk
+
+      - name: Set up Python  # Setting Python versions previously configured
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Dependencies  # Installing python dependencies previous to our package installation (i.e., pip to install our package)
+        run: |  # Upgrade pip
+          python -m pip install --upgrade pip
+
+      - name: Install package  # Install our package and dependencies using command-line
+        shell: bash -l {0}
+        run: pip install .
+
+      - name: Run Tests  # Run tests using unittest (recommended)
+        shell: bash -l {0}
+        run: |
+          python -m unittest -v
