@@ -1,0 +1,1 @@
+This text file represent an example of documentation/tutorials required to be implemented on our package
