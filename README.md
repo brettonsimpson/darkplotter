@@ -10,7 +10,7 @@ Understanding the dynamics and structure of the Milky Way galaxy is a fundamenta
 Our Python package addresses this need by providing an interactive platform to visualize and analyze the orbital radius as a function of velocity for the Milky Way galaxy. Users can adjust parameters for the Triaxial NFW, Plummer, and Exponential potentials to see how each model affects the simulated velocity profile. This tool allows for direct comparison with observed velocity profiles, facilitating a deeper understanding of galactic dynamics and the influence of different mass distribution models. By making these complex models accessible and manipulatable, our package serves as an additional resource for both educational and research purposes in astrophysics.
 
 # Attribution
-If you use this code in your research work, please refer to the package by its name and cite the authors!. Any question, please email [Keneth Garcia-Cifuentes](mailto:stivengarcia7113@gmail.com).
+If you use this code in your research work, please refer to the package by its name and cite the authors!. Any question, please start an issue!.
 
 # Dependencies and Installation
 
