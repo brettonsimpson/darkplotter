@@ -1,4 +1,4 @@
-![Logo]([https://cdn.discordapp.com/attachments/1254086159420887081/1263636126682452018/Untitled_design_6.png?ex=669af459&is=6699a2d9&hm=63c90e39f1a36f7a2a438e673ad01e776dbf2e9d03a3175c060b825f36ddc83a&](https://media.discordapp.net/attachments/1254086159420887081/1263639533744816128/Untitled_design_1-removebg-preview.png?ex=669af786&is=6699a606&hm=07575cbb4f31e035fa7fc52002689a566673f61de68d9ac9693e1370776a3373&=&format=webp&quality=lossless&width=625&height=625))  
+![Logo](https://media.discordapp.net/attachments/1254086159420887081/1263639533744816128/Untitled_design_1-removebg-preview.png?ex=669af786&is=6699a606&hm=07575cbb4f31e035fa7fc52002689a566673f61de68d9ac9693e1370776a3373&=&format=webp&quality=lossless&width=625&height=625) 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -86,4 +86,3 @@ DarkPlotter.plot()
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/brettonsimpson/group-13/blob/develop/LICENSE) file for details.
 
-](https://cdn.discordapp.com/attachments/1254086159420887081/1263637337959825498/Untitled_design_1.jpg?ex=669af57a&is=6699a3fa&hm=2a9e2fb3ca34006a7825600e8029661ac04bfb0a419dc2e725b19099de9ec39a&)
