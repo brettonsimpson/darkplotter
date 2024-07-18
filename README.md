@@ -86,3 +86,6 @@ DarkPlotter.plot()
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/brettonsimpson/group-13/blob/develop/LICENSE) file for details.
 
+## Acknowledgement
+
+
