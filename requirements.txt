@@ -1,6 +1,16 @@
+astropy @ file:///croot/astropy_1717771811817/work
+astropy-iers-data @ file:///croot/astropy-iers-data_1717700760580/work
+ipywidgets==8.1.3
+matplotlib @ file:///croot/matplotlib-suite_1713336378214/work
 numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp310-cp310-linux_x86_64.whl#sha256=d8cd837ed43e87f77e6efaa08e8de927ca030a1c9c5d04624432d6fb9a74a5ee
-pandas==2.2.2
-plotly==5.22.0
-scipy==1.14.0
-matplotlib
-ipywidgets
+plotly @ file:///croot/plotly_1718136942809/work
+Sphinx==5.3.0
+sphinx-rtd-theme==2.0.0
+sphinxcontrib-applehelp==1.0.8
+sphinxcontrib-devhelp==1.0.6
+sphinxcontrib-htmlhelp==2.0.5
+sphinxcontrib-jquery==4.1
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-napoleon==0.7
+sphinxcontrib-qthelp==1.0.7
+sphinxcontrib-serializinghtml==1.1.10
