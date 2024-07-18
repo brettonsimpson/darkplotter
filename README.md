@@ -2,48 +2,45 @@
 
 # Dark Plotter
 
-Dark Plotter is a Python package for visualizing radial velocity as a function of radius for the Milky Way galaxy in an interactive way. This Python package was developed as a project for the Code/Astro workshop in 2024. [Code/Astro 2024] https://github.com/semaphoreP/codeastro
+Dark Plotter is a Python package for visualizing velocity as a function of radius for the Milky Way galaxy in an interactive way. This Python package was developed as a project for the Code/Astro workshop in 2024. ![Code/Astro 2024](https://github.com/semaphoreP/codeastro)
 
-# Statement of need
-Understanding the dynamics and structure of the Milky Way galaxy is a fundamental goal in astrophysics. A critical aspect of this is analyzing the rotation curve, which represents the orbital velocity of stars and gas as a function of their distance from the galactic center. Discrepancies between observed rotation curves and those predicted by visible matter alone have led to the hypothesis of dark matter, necessitating more sophisticated models. Traditional models like the Triaxial NFW Potential, Plummer Potential, and Exponential Potential offer different perspectives on the galaxy's mass distribution. However, researchers and students often face challenges in visualizing and comparing these models with observed data, highlighting the need for an intuitive, interactive tool to aid in the exploration and understanding of galactic dynamics.
-
-Our Python package addresses this need by providing an interactive platform to visualize and analyze the orbital radius as a function of velocity for the Milky Way galaxy. Users can adjust parameters for the Triaxial NFW, Plummer, and Exponential potentials to see how each model affects the simulated velocity profile. This tool allows for direct comparison with observed velocity profiles, facilitating a deeper understanding of galactic dynamics and the influence of different mass distribution models. By making these complex models accessible and manipulatable, our package serves as an additional resource for both educational and research purposes in astrophysics.
+The study of the orbital velocity of the galactic disk has provided astronomers with insights into the nature of dark matter, a substance that is so far not well understood, despite composing approximately one-third of the universal energy density. The equations of gravity, both classic and relativistic, fail to explain why galactic rotation curves do not decay as quickly as we expect they should with increasing distance from the core. Mathematical models to describe the gravitational potential profiles for galaxies as a function of radius, including the Navarro-Frenk-White, Plummer, Hernquist, and Jaffe profiles offer different perspectives on a galaxy's mass and velocity distribution. However, researchers and students often face challenges in visualizing and comparing these models with observed data, emphasizing the need for an interactive tool to aid in the teaching and exploration of galactic dynamics. This tool enables the direct comparison of the observed Milky Way velocity profile with the specified models. 
 
 # Attribution
-If you use this code in your research work, please refer to the package by its name and cite the authors!. If you have any questions, feel free to open an issue through GitHub.
+If you use this code in your research work, please refer to the package by its name and cite the authors! If you have any questions, feel free to open an issue through GitHub.
 
 # Dependencies and Installation
 
-This repository requires Python 3.10 or high, and a list of packages downloaded automatically ([numpy](https://github.com/numpy/numpy), [scipy](https://scipy.org/), etc.). In addition, it is required to install all the dependencies related to [plotly](https://plotly.com/python/).
+This repository requires Python 3.10 or newer, and a list of packages downloaded automatically ([numpy](https://github.com/numpy/numpy), [scipy](https://scipy.org/), etc.). In addition, it is required to install all the dependencies related to [plotly](https://plotly.com/python/).
 
-# Installing **Package_Name**
+# Installation
 
-You can install **Package_Name** on Windows, MacOS, and Linux distributions. In either case, we assume that you have already installed the dependencies and the appropriate Python version. There are two options to install **Package_Name**:
+You can install **Dark Plotter** on Windows, MacOS, and Linux distributions. In either case, we assume that you have already installed the dependencies and the appropriate Python version. There are two options to install **Dark Plotter**:
 
 ## GitHub
 
-You can install the latest sources from **Package_Name** by cloning the repository directly from GitHub:
+You can install the latest sources from **Dark Plotter** by cloning the repository directly from GitHub:
 ```
 $ git clone https://github.com/brettonsimpson/group-13
-$ cd package_name
-$ pip install .
+$ cd Dark Plotter
+$ pip install INSERT PIP INSTALL IDENTIFIER
 ```
 Or, instead, use `pip` with the path to the repository:
 ```
-$ pip install package_name@git+https://github.com/brettonsimpson/group-13
+$ pip install Dark Plotter@git+https://github.com/brettonsimpson/group-13
 ```
 
 ## PyPI
-A stable compiled version of **Package_Name** is available on [PyPI](https://pypi.org/). You can install it by running:
+A stable compiled version of **Dark Plotter** is available on [PyPI](https://pypi.org/). You can install it by running:
 ```
-$ pip install package_name
+$ pip install Dark Plotter
 ```
 
 ## Testing
 
-If you have installed the development version of **Package_Name** or cloned the complete source code (e.g., from the GitHub repository), you can run the tests by executing the following commands:
+If you have installed the development version of **Dark Plotter** or cloned the complete source code (e.g., from the GitHub repository), you can run the tests by executing the following commands:
 
 ```
-$ cd package_name
+$ cd Dark Plotter
 $ python -m unittest -v
 ```
