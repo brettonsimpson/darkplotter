@@ -10,7 +10,7 @@ Understanding the dynamics and structure of the Milky Way galaxy is a fundamenta
 Our Python package addresses this need by providing an interactive platform to visualize and analyze the orbital radius as a function of velocity for the Milky Way galaxy. Users can adjust parameters for the Triaxial NFW, Plummer, and Exponential potentials to see how each model affects the simulated velocity profile. This tool allows for direct comparison with observed velocity profiles, facilitating a deeper understanding of galactic dynamics and the influence of different mass distribution models. By making these complex models accessible and manipulatable, our package serves as an additional resource for both educational and research purposes in astrophysics.
 
 # Attribution
-If you use this code in your research work, please refer to the package by its name and cite the authors!. Any question, please start an issue!.
+If you use this code in your research work, please refer to the package by its name and cite the authors!. If you have any questions, feel free to open an issue through GitHub.
 
 # Dependencies and Installation
 
@@ -18,11 +18,11 @@ This repository requires Python 3.10 or high, and a list of packages downloaded 
 
 # Installing **Package_Name**
 
-You can install **Package_Name** on Windows, MacOs and Linux distributions. In both cases, we assume that you have already installed the dependencies and the appropriate Python version. Now, there are two options to install **ClassiPyGRB**:
+You can install **Package_Name** on Windows, MacOS, and Linux distributions. In either case, we assume that you have already installed the dependencies and the appropriate Python version. There are two options to install **Package_Name**:
 
 ## GitHub
 
-You can install the latest sources from **ClassiPyGRB** by cloning the repository directly from GitHub:
+You can install the latest sources from **Package_Name** by cloning the repository directly from GitHub:
 ```
 $ git clone https://github.com/brettonsimpson/group-13
 $ cd package_name
@@ -34,7 +34,7 @@ $ pip install package_name@git+https://github.com/brettonsimpson/group-13
 ```
 
 ## PyPI
-A stable compiled version of **ClassiPyGRB** is available on [PyPI](https://pypi.org/). You can install it by running:
+A stable compiled version of **Package_Name** is available on [PyPI](https://pypi.org/). You can install it by running:
 ```
 $ pip install package_name
 ```

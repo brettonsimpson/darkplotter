@@ -7,22 +7,23 @@ requires = [
 build-backend = 'setuptools.build_meta'
 
 [project]
-name = "our_package_name"  # Name of our package
+name = "our_package_name"
 version = "1.0.0"  # Version of the package, if any
 authors = [  # List of authors of the project and emails
   {name = "Garcia-Cifuentes, K.", email = "stivengarcia7113@gmail.com"},
-  {name = "Bretton", email = "Bretton@example.com"},
+  {name = "Bretton Simpson", email = "bsimpson@ucsd.com"},
   {name = "Elizabeth", email = "Elizabeth@example.com"},
   {name = "Alcatraz", email = "Alcatraz@example.com"},
   {name = "Dionysis", email = "Dionysis@example.com"},
 ]
-maintainers = [  # Name of the people that will maintain our package, it is not necessary in this case, you can delete this arg
+maintainers = [
   {name = "Keneth Garcia", email = "stivengarcia7113@gmail.com"}
+  {name = "Bretton Simpson", email = "bsimpson@ucsd.edu"}
 ]
 keywords = [  # Keywords related to the package, add everyone that you consider pertinent
    "Galactic Dynamics", "Rotation Curves", "Plummer Model", "Galaxies", "Extragalactic Astronomy"
 ]
-description = "A package to plot interactive dynamic models for Code/Astro 2024"  # Desc of our package
+description = "This package is an educational tool to teach undergradute students in astronomy about the gravitational potential and corresponding velocity curve as a function of radius for the Milky Way galaxy. After using this tool, students should understand that some form of dark matter must exist in order to explain the obsered velocity curve of the Milky Way.
 readme = {file = "README.md", content-type = "text/markdown"}  # Metadata of the README file
 requires-python = ">=3.8"  # Python requirement version
 license = {file = "LICENSE", name = "MIT License"}  # License name
