@@ -3,3 +3,4 @@ pandas==2.2.2
 plotly==5.22.0
 scipy==1.14.0
 matplotlib
+ipywidgets
