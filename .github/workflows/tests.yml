@@ -21,7 +21,7 @@ jobs:   # This section defines the jobs executed to test our package
 
     strategy:
       matrix:
-        python-version: ["3.10", "3.11"]  # Python versions to test
+        python-version: ["3.10.x", "3.11.x"]  # Python versions to test
 
     steps:
       - name: Checkout Repository
