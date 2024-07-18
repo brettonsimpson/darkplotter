@@ -54,7 +54,7 @@ $ pip install Dark Plotter
 
 If you have installed the development version of **Dark Plotter** or cloned the complete source code (e.g., from the GitHub repository), you can run the tests by executing the following commands:
 
-```
+```python
 $ cd Dark Plotter
 $ python -m unittest -v
 ```
@@ -64,11 +64,11 @@ $ python -m unittest -v
 1. Open Jupyter notebook.
 
 2. Import the DarkPlotter :
-```
+``` python
 import DarkPlotter
 ```
 3. Use the plot function to create the interactive rotation curve plots.
-```
+``` python
 DarkPlotter.plot()
 ```
 
