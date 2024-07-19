@@ -7,7 +7,7 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = "darkplotter"
-version = "1.0.0"  # Version of the package, if any
+version = "1.0.1"  # Version of the package, if any
 authors = [
   {name = "Garcia-Cifuentes, K.", email = "stivengarcia7113@gmail.com"},
   {name = "Bretton Simpson", email = "bsimpson@ucsd.edu"},
