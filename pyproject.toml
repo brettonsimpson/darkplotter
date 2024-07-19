@@ -11,10 +11,10 @@ name = "darkplotter"
 version = "1.0.0"  # Version of the package, if any
 authors = [  # List of authors of the project and emails
   {name = "Garcia-Cifuentes, K.", email = "stivengarcia7113@gmail.com"},
-  {name = "Bretton Simpson", email = "bsimpson@ucsd.com"},
-  {name = "Elizabeth", email = "Elizabeth@example.com"},
-  {name = "Alcatraz", email = "Alcatraz@example.com"},
-  {name = "Dionysis", email = "Dionysis@example.com"},
+  {name = "Bretton Simpson", email = "bsimpson@ucsd.edu"},
+  {name = "Elizabeth Moreno", email = "Elizabeth@example.com"},
+  {name = "Vyom Singh Rathore", email = "rathorevyom04@gmail.com"},
+  {name = "Dionysis Gakis", email = "dgakis5@gmail.com"},
 ]
 maintainers = [
   {name = "Keneth Garcia", email = "stivengarcia7113@gmail.com"}
@@ -35,11 +35,9 @@ classifiers = [  # A list of special keywords to describe the package, its publi
     "Topic :: Scientific/Engineering :: Astronomy",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10.x",
-    "Programming Language :: Python :: 3.11.x",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: Implementation",
     "Natural Language :: English",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux"
@@ -49,11 +47,12 @@ dependencies = [   # List all the dependencies related to the package, sintax: "
     "numpy>=1.24.2",
     "pandas>=2.0.0",
     "scipy>=1.10.1",
+    "astropy>=6.1.1"
 ]
 
 [project.urls]   # List of all the project URLs related to the package, change urls if necessary based on the branch
-homepage = "https://github.com/brettonsimpson/group-13"
-documentation = "https://github.com/brettonsimpson/group-13/tree/Keneth_updates/docs"
+homepage = "https://github.com/brettonsimpson/darkplotter"
+documentation = "https://github.com/brettonsimpson/darkplotter"
 
 [tool.setuptools.package-data]  # List of all package data file required to use package_name, such as tables. Remove it if necessary
 summary_tables = ["*"]
