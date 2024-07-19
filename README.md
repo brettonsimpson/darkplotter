@@ -47,7 +47,7 @@ $ pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
 ## PyPI
 A stable compiled version of **Dark Plotter** is available on [PyPI](https://pypi.org/). You can install it by running:
 ```
-$ pip install Dark Plotter
+$ pip install darkplotter
 ```
 
 ## Testing
