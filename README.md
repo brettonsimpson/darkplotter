@@ -35,13 +35,13 @@ You can install **Dark Plotter** on Windows, MacOS, and Linux distributions. In 
 
 You can install the latest sources from **Dark Plotter** by cloning the repository directly from GitHub:
 ```
-$ git clone https://github.com/brettonsimpson/group-13
+$ git clone https://github.com/brettonsimpson/darkplotter
 $ cd DarkPlotter
 $ pip install INSERT PIP INSTALL IDENTIFIER
 ```
 Or, instead, use `pip` with the path to the repository:
 ```
-$ pip install Dark Plotter@git+https://github.com/brettonsimpson/group-13
+$ pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
 ```
 
 ## PyPI
@@ -87,5 +87,9 @@ DarkPlotter.plot()
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/brettonsimpson/group-13/blob/develop/LICENSE) file for details.
 
 ## Acknowledgement
+The success of this project is due to the contributions of many.
 
+* Deep appreciation goes to the contributors of this repository. Their efforts and shared knowledge have been essential.
+* The instructors and teaching assistants who led the workshop and provided invaluable guidance throughout are gratefully acknowledged.
+* Special thanks are extended to Suchitra Narayana, the teaching assistant for the group. Their support, patience, and insights significantly aided in the completion of this project.
 
