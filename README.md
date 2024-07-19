@@ -35,19 +35,19 @@ You can install **Dark Plotter** on Windows, MacOS, and Linux distributions. In 
 
 You can install the latest sources from **Dark Plotter** by cloning the repository directly from GitHub:
 ```
-$ git clone https://github.com/brettonsimpson/darkplotter
-$ cd darkplotter
-$ pip install DarkPlotter
+git clone https://github.com/brettonsimpson/darkplotter
+cd darkplotter
+pip install darkplotter
 ```
 Or, instead, use `pip` with the path to the repository:
 ```
-$ pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
+pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
 ```
 
 ## PyPI
 A stable compiled version of **Dark Plotter** is available on [PyPI](https://pypi.org/). You can install it by running:
 ```
-$ pip install darkplotter
+pip install darkplotter
 ```
 
 ## Testing
@@ -55,17 +55,17 @@ $ pip install darkplotter
 If you have installed the development version of **Dark Plotter** or cloned the complete source code (e.g., from the GitHub repository), you can run the tests by executing the following commands:
 
 ```python
-$ cd Dark Plotter
-$ python -m unittest -v
+cd darkplotter
+python -m unittest -v
 ```
 
 ## Usage
 
 1. Open Jupyter notebook.
 
-2. Import the DarkPlotter :
+2. Import the darkplotter :
 ``` python
-import DarkPlotter
+import darkplotter
 ```
 3. Use the plot function to create the interactive rotation curve plots.
 ``` python
