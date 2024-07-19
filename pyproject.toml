@@ -17,10 +17,10 @@ authors = [
 ]
 maintainers = [
   {name = "Keneth Garcia", email = "stivengarcia7113@gmail.com"},
-  {name = "Bretton Simpson", email = "bsimpson@ucsd.edu"}
-#  {name = "Vyom Singh Rathore", email = "rathorevyom04@gmail.com"},
-#  {name = "Dionysis Gakis", email = "dgakis5@gmail.com"},
-#  {name = "Elizabeth Moreno", email = "Elizabeth@example.com"}
+  {name = "Bretton Simpson", email = "bsimpson@ucsd.edu"},
+  {name = "Vyom Singh Rathore", email = "rathorevyom04@gmail.com"},
+  {name = "Dionysis Gakis", email = "dgakis5@gmail.com"},
+  {name = "Elizabeth Moreno", email = "Elizabeth@example.com"}
 ]
 keywords = [
    "Galactic Dynamics", "Rotation Curves", "Plummer Model", "Galaxies", "Extragalactic Astronomy, Hernquist, Jaffe, Gravitational Potential, Dark Matter"
