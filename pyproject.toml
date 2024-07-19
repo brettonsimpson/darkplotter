@@ -23,13 +23,13 @@ maintainers = [
   {name = "Elizabeth Moreno", email = "Elizabeth@example.com"}
 ]
 keywords = [
-   "Galactic Dynamics", "Rotation Curves", "Plummer Model", "Galaxies", "Extragalactic Astronomy"
+   "Galactic Dynamics", "Rotation Curves", "Plummer Model", "Galaxies", "Extragalactic Astronomy, Hernquist, Jaffe, Gravitational Potential, Dark Matter"
 ]
 description = "This package is an educational tool to teach undergradute students in astronomy about the gravitational potential and corresponding velocity curve as a function of radius for the Milky Way galaxy. After using this tool, students should understand that some form of dark matter must exist in order to explain the obsered velocity curve of the Milky Way."
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.10"
 license = {file = "LICENSE", name = "MIT License"}
-classifiers = [  # A list of special keywords to describe the package, its public and in what system can be executed. A complete list of classifiers can be found here: https://pypi.org/classifiers/
+classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Education",
     "Intended Audience :: Information Technology",
@@ -52,7 +52,7 @@ dependencies = [
     "astropy>=6.1.1"
 ]
 
-[project.urls]   # List of all the project URLs related to the package, change urls if necessary based on the branch
+[project.urls]
 homepage = "https://github.com/brettonsimpson/darkplotter"
 documentation = "https://github.com/brettonsimpson/darkplotter"
 
