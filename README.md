@@ -36,8 +36,8 @@ You can install **Dark Plotter** on Windows, MacOS, and Linux distributions. In 
 You can install the latest sources from **Dark Plotter** by cloning the repository directly from GitHub:
 ```
 $ git clone https://github.com/brettonsimpson/darkplotter
-$ cd DarkPlotter
-$ pip install INSERT PIP INSTALL IDENTIFIER
+$ cd darkplotter
+$ pip install DarkPlotter
 ```
 Or, instead, use `pip` with the path to the repository:
 ```
@@ -47,7 +47,7 @@ $ pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
 ## PyPI
 A stable compiled version of **Dark Plotter** is available on [PyPI](https://pypi.org/). You can install it by running:
 ```
-$ pip install Dark Plotter
+$ pip install darkplotter
 ```
 
 ## Testing
