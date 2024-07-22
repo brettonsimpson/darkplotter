@@ -4,7 +4,7 @@ setup(
     name='darkplotter',
     version='1.0.1',
     description='A plotting library for dark-themed visualizations',
-    author='Test User'
+    author='Test User',
     url='https://github.com/rathorevedant99/darkplotter',
     packages=['darkplotter'],
     install_requires=[
