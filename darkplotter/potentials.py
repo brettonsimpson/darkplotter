@@ -161,7 +161,8 @@ class JaffePotential(Potential):
         return - G * M / self.a * np.log(1 + self.a / self.r)
 
 # Load the observational data
-data = np.loadtxt('MW_Vc.txt', skiprows=2)
+
+data = np.loadtxt("MW_Vc.txt", skiprows=2)
 r_obs = data[:, 0] * 3.086e19  # Distance in meters (converted from kpc)
 v_obs = data[:, 1] * 1e3  # Velocity in meters per second (converted from km/s)
 sigma_plus = data[:, 2] * 1e3  # Positive uncertainty in meters per second (converted from km/s)
