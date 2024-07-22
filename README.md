@@ -1,4 +1,6 @@
-<img src = "./images/Darkplotter_logo.png" width = "100" height = "100" alt = "DarkPlotter logo" align = "center">
+<p align = "center">
+  <img src = "./images/Darkplotter_logo.png" width = "200" height = "200" alt = "DarkPlotter logo" align = "center">
+</p>
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
