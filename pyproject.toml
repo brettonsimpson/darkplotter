@@ -51,12 +51,13 @@ documentation = "https://github.com/brettonsimpson/darkplotter"
 
 [options]
 packages = "find:darkplotter"
-install_requires =
-    matplotlib
-    numpy
-    pandas
-    scipy
-    astropy
+install_requires =[
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scipy",
+    "plotly"
+]
 
 [tool.setuptools.package-data]
 summary_tables = ["*"]
