@@ -1,4 +1,4 @@
-![Logo](https://media.discordapp.net/attachments/1254086159420887081/1263639533744816128/Untitled_design_1-removebg-preview.png?ex=669af786&is=6699a606&hm=07575cbb4f31e035fa7fc52002689a566673f61de68d9ac9693e1370776a3373&=&format=webp&quality=lossless&width=625&height=625) 
+<img src = "./images/Darkplotter_logo.png">
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
