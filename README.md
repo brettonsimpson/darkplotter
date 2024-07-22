@@ -1,4 +1,4 @@
-<img src = "./images/Darkplotter_logo.png">
+<img src = "./images/Darkplotter_logo.png" width = "100" height = "100" alt = "DarkPlotter logo">
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
