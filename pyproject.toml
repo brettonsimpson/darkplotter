@@ -50,7 +50,7 @@ homepage = "https://github.com/brettonsimpson/darkplotter"
 documentation = "https://github.com/brettonsimpson/darkplotter"
 
 [options]
-packages = find:"darkplotter"
+packages = "find:darkplotter"
 install_requires =
     matplotlib
     numpy
