@@ -1,12 +1,8 @@
 import numpy as np
 import plotly.graph_objs as go
-from ipywidgets import interact, FloatSlider, Checkbox, HBox, VBox
-import plotly.graph_objs as go
-import ipywidgets as widgets
+from ipywidgets import interact, FloatSlider
 import astropy.constants as c
 from scipy import special
-from astropy.io import ascii
-import scipy.optimize as op
 
 # Define the radial distance array in meters
 r = np.linspace(0.1, 50, 500) * 3.086e19  # Convert kpc to meters
@@ -164,14 +160,50 @@ class JaffePotential(Potential):
         """
         return - G * M / self.a * np.log(1 + self.a / self.r)
 
-# Load the observational data
-data = np.loadtxt("MW_Vc.txt", skiprows=2)
-r_obs = data[:, 0] * 3.086e19  # Distance in meters (converted from kpc)
-v_obs = data[:, 1] * 1e3  # Velocity in meters per second (converted from km/s)
-sigma_plus = data[:, 2] * 1e3  # Positive uncertainty in meters per second (converted from km/s)
-sigma_minus = data[:, 3] * 1e3  # Negative uncertainty in meters per second (converted from km/s)
+class IsothermalPotential(Potential):
+    """
+    Class for Isothermal gravitational potential.
 
-# Functions if we'd like to fit the potentials and find the value parameters
+    Attributes:
+        sigma (float): Velocity dispersion in m/s.
+    """
+    
+    def __init__(self, r, sigma):
+        """
+        Initializes the IsothermalPotential class.
+
+        Parameters:
+            r (ndarray): Radial distance array in meters.
+            sigma (float): Velocity dispersion in km/s.
+        """
+        super().__init__(r)
+        self.sigma = sigma * 1e3  # Convert km/s to m/s
+
+    def potential(self):
+        """
+        Computes the Isothermal gravitational potential.
+
+        Returns:
+            phi (ndarray): Gravitational potential array.
+        """
+        return self.sigma**2 * np.log(self.r)
+
+    def rotation_curve(self):
+        """
+        Computes the rotation curve for the isothermal potential.
+
+        Returns:
+            v_c (ndarray): Rotation velocity array in m/s.
+        """
+        return np.sqrt(2) * self.sigma * np.ones_like(self.r)
+
+# Load the observational data from MWay.dat
+data = np.loadtxt("MWay.dat", skiprows=1)
+r_obs = data[:, 0] # Distance in kpc
+v_obs = data[:, 1] # Velocity in km/s
+sigma_obs = data[:, 2] # Uncertainty in km/s
+
+# Functions to fit the potentials to the Velocity Curve
 Y_plummer = lambda x, b, M: ((G_astro * M) / (x**2. + b**2.)**1.5)**.5 * x
 Y_Kuzmin = lambda x, a, M: ((((G_astro) * (M))**.5) / ((x**2. + a**2.)**0.75)) * x
 Y_exponencial = lambda x, rd, s: ((np.pi * G_astro * (s) * (x**2.) / (rd)) * (((special.iv(0, x / (2. * rd))) * (special.kn(0, x / (2. * rd)))) - ((special.iv(1, x / (2. * rd))) * (special.kn(1, x / (2. * rd))))))**.5
@@ -223,18 +255,18 @@ def chi_iso(params, x, y, yerr):
     return result
 
 # Interactive plotting
-def update_plot(a_nfw, a_hernquist, a_plummer, a_jaffe):
-    # Create potential instances
+def update_plot(a_nfw, a_hernquist, a_plummer, a_jaffe, sigma_iso):
     nfw = NFWPotential(r, a_nfw)
     hernquist = HernquistPotential(r, a_hernquist)
     plummer = PlummerPotential(r, a_plummer)
     jaffe = JaffePotential(r, a_jaffe)
-    
-    # Compute rotation curves
+    isothermal = IsothermalPotential(r, sigma_iso)
+
     v_nfw = nfw.rotation_curve()
     v_hernquist = hernquist.rotation_curve()
     v_plummer = plummer.rotation_curve()
     v_jaffe = jaffe.rotation_curve()
+    v_isothermal = isothermal.rotation_curve()
 
     # Plot the results
     fig = go.Figure()
@@ -242,8 +274,9 @@ def update_plot(a_nfw, a_hernquist, a_plummer, a_jaffe):
     fig.add_trace(go.Scatter(x=r / 3.086e19, y=v_hernquist / 1e3, mode='lines', name='Hernquist'))
     fig.add_trace(go.Scatter(x=r / 3.086e19, y=v_plummer / 1e3, mode='lines', name='Plummer'))
     fig.add_trace(go.Scatter(x=r / 3.086e19, y=v_jaffe / 1e3, mode='lines', name='Jaffe'))
+    fig.add_trace(go.Scatter(x=r / 3.086e19, y=v_isothermal / 1e3, mode='lines', name='Isothermal'))
     fig.add_trace(go.Scatter(x=r_obs / 3.086e19, y=v_obs / 1e3, mode='markers', name='Observations',
-                             error_y=dict(type='data', array=sigma_plus / 1e3, arrayminus=sigma_minus / 1e3)))
+                             error_y=dict(type='data', array=sigma_obs / 1e3, arrayminus=sigma_obs / 1e3)))
 
     fig.update_layout(title='Rotation Curves', xaxis_title='Distance (kpc)', yaxis_title='Velocity (km/s)')
     fig.show()
@@ -253,4 +286,5 @@ interact(update_plot,
          a_nfw=FloatSlider(min=1, max=100, step=1, value=20, description='NFW scale radius (kpc)'),
          a_hernquist=FloatSlider(min=1, max=100, step=1, value=20, description='Hernquist scale radius (kpc)'),
          a_plummer=FloatSlider(min=1, max=100, step=1, value=20, description='Plummer scale radius (kpc)'),
-         a_jaffe=FloatSlider(min=1, max=100, step=1, value=20, description='Jaffe scale radius (kpc)'))
+         a_jaffe=FloatSlider(min=1, max=100, step=1, value=20, description='Jaffe scale radius (kpc)'),
+         sigma_iso=FloatSlider(min=10, max=300, step=10, value=100, description='Isothermal velocity dispersion (km/s)'))
