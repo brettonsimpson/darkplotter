@@ -10,6 +10,8 @@ from potentials import *
 
 # Create initial figure widget
 
+
+    
 def plot():
     
 # Create initial figure widget
