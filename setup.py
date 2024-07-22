@@ -6,13 +6,13 @@ setup(
     description='A plotting library for dark-themed visualizations',
     author='Test User',
     url='https://github.com/rathorevedant99/darkplotter',
-    packages=['darkplotter', 'darkplotter.potentials'],
+    packages=['darkplotter'],
     install_requires=[
     "matplotlib",
     "numpy",
-    "pandas",
     "scipy",
-    "plotly"
+    "plotly",
+    "astropy"
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
