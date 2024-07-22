@@ -56,6 +56,9 @@ dependencies = [
 homepage = "https://github.com/brettonsimpson/darkplotter"
 documentation = "https://github.com/brettonsimpson/darkplotter"
 
+[options]
+packages = find:
+
 [tool.setuptools.package-data]
 summary_tables = ["*"]
 
