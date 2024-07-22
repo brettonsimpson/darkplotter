@@ -44,13 +44,6 @@ classifiers = [
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX :: Linux"
 ]
-dependencies = [
-    "matplotlib>=3.7.1",
-    "numpy>=1.24.2",
-    "pandas>=2.0.0",
-    "scipy>=1.10.1",
-    "astropy>=6.1.1"
-]
 
 [project.urls]
 homepage = "https://github.com/brettonsimpson/darkplotter"
@@ -58,6 +51,14 @@ documentation = "https://github.com/brettonsimpson/darkplotter"
 
 [options]
 packages = find:
+package_dir = 
+    = "darkplotter"
+install_requires =
+    matplotlib
+    numpy
+    pandas
+    scipy
+    astropy
 
 [tool.setuptools.package-data]
 summary_tables = ["*"]
