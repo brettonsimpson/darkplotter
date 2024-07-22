@@ -42,7 +42,7 @@ Pip installing darkplotter:
 ```
 pip install darkplotter
 ```
-Or, instead, use `pip` with the path to the repository:
+Or, instead if you have ssh setup, use `pip` with the path to the repository:
 ```
 pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
 ```
