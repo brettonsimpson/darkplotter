@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='darkplotter',
@@ -6,7 +6,7 @@ setup(
     description='A plotting library for dark-themed visualizations',
     author='Test User',
     url='https://github.com/rathorevedant99/darkplotter',
-    packages=['darkplotter'],
+    packages=['darkplotter', 'darkplotter.potentials'],
     install_requires=[
     "matplotlib",
     "numpy",
