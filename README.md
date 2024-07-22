@@ -2,13 +2,7 @@
   <img src = "./images/Darkplotter_logo.png" width = "200" height = "200" alt = "DarkPlotter logo" align = "center">
 </p>
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![GitHub top language](https://img.shields.io/github/languages/top/brettonsimpson/group-13)
-
-
-![A rectangular badge, half black half purple containing the text made at Code Astro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)
-
-![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/brettonsimpson/group-13)
-
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  ![GitHub top language](https://img.shields.io/github/languages/top/brettonsimpson/group-13)  ![A rectangular badge, half black half purple containing the text made at Code Astro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)  ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/brettonsimpson/group-13)
 
 # Dark Plotter
 
