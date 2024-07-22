@@ -60,4 +60,4 @@ documentation = "https://github.com/brettonsimpson/darkplotter"
 summary_tables = ["*"]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["darkplotter"]
