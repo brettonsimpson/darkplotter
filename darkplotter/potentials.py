@@ -4,6 +4,7 @@ from ipywidgets import interact, FloatSlider, Checkbox, HBox, VBox
 import plotly.graph_objs as go
 import ipywidgets as widgets
 import astropy.constants as c
+import os
 
 # Define the radial distance array in meters
 r = np.linspace(0.1, 50, 500) * 3.086e19  # Convert kpc to meters
@@ -161,8 +162,9 @@ class JaffePotential(Potential):
         return - G * M / self.a * np.log(1 + self.a / self.r)
 
 # Load the observational data
+data_path = os.path.join(os.path.dirname(__file__), 'MW_Vc.txt')
 
-data = np.loadtxt("MW_Vc.txt", skiprows=2)
+data = np.loadtxt(data_path, skiprows=2)
 r_obs = data[:, 0] * 3.086e19  # Distance in meters (converted from kpc)
 v_obs = data[:, 1] * 1e3  # Velocity in meters per second (converted from km/s)
 sigma_plus = data[:, 2] * 1e3  # Positive uncertainty in meters per second (converted from km/s)
