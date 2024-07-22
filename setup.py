@@ -7,6 +7,8 @@ setup(
     author='Test User',
     url='https://github.com/rathorevedant99/darkplotter',
     packages=['darkplotter'],
+    package_data={'': ['MW_Vc.txt','MWay.dat']},
+    include_package_data=True,
     install_requires=[
     "matplotlib",
     "numpy",
