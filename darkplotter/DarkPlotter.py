@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import ipywidgets as widgets
 import astropy.constants as c
 
-from potentials import *
+from .potentials import NFWPotential, HernquistPotential, PlummerPotential, JaffePotential, r, r_obs, v_obs, sigma_plus, sigma_minus
 
 # Create initial figure widget
 

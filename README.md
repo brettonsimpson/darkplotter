@@ -33,15 +33,21 @@ You can install the latest sources from **Dark Plotter** by cloning the reposito
 git clone https://github.com/brettonsimpson/darkplotter
 cd darkplotter
 ```
+
+### To contribute
 Upgrade pip and install the necessary dependencies:
 ```
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+### Installing darkplotter 
 Pip installing darkplotter:
 ```
 pip install darkplotter
 ```
+Or, use `pip` with the path to the repository:
+=======
 Or, instead , use `pip` with the path to the repository:
 ```
 pip install darkplotter@git+https://github.com/brettonsimpson/darkplotter
